@@ -1,0 +1,9 @@
+# 四合院项目源码（只发布构建产物）
+siheyuan/
+
+# 依赖与构建
+siheyuan/node_modules/
+siheyuan/dist/
+
+# 系统杂项
+.DS_Store

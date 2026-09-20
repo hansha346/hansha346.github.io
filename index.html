@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style type="text/css">
-		body{
-			text-align: center;
-			padding: 100px;
-		}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一座宅子的生长 · 传统四合院 3D 讲解</title>
+  <script type="module" crossorigin src="/assets/index-DDM5z5MN.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/three-9CzIfll6.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DuM-v3cO.css">
 </head>
 <body>
-	<h1>这是首页？？</h1>
+  <div id="app">
+    <canvas id="scene"></canvas>
+    <header class="title">
+      <h1>一座宅子的生长</h1>
+      <p>传统四合院 · 3D 讲解</p>
+    </header>
+    <div id="stage-label" class="stage-label"></div>
+    <button id="reset-view" title="重置视角">⌂</button>
+    <aside id="info-card">
+      <button id="info-close">×</button>
+      <h2 id="info-title"></h2>
+      <p id="info-text"></p>
+    </aside>
+    <footer class="panel">
+      <div class="narration" id="narration"></div>
+      <div class="slider-row">
+        <span class="slider-end">空地</span>
+        <input type="range" id="progress" min="0" max="1000" value="0" />
+        <span class="slider-end">宅院</span>
+        <button id="play-btn">▶ 自动播放</button>
+      </div>
+      <div class="stage-dots" id="stage-dots"></div>
+    </footer>
+  </div>
 </body>
 </html>
